@@ -1,0 +1,45 @@
+.nav_link, .title {
+  font-family: sans-serif;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1168px;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+.title {
+  font-size: 48px;
+}
+.title_last {
+  color: #8A2BE2;
+}
+
+.nav {
+  display: flex;
+  gap: 16px;
+}
+.nav_link {
+  text-decoration: none;
+}
+
+.content {
+  width: widthSite;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.content_item {
+  width: 288px;
+  height: 200px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}/*# sourceMappingURL=style.css.map */

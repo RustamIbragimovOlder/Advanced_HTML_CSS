@@ -1,0 +1,46 @@
+@import 'vars';
+@import 'mixins';
+@import 'extends';
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: ($widthSite - 2 * $gapBox);
+    border: $borderBox;
+    text-align: center;
+}
+
+.title {
+    font-size: 48px;
+    @extend %font-site;
+
+    &_last {
+        color: $colorTextSite;
+    }
+}
+
+.nav {
+    display: flex;
+    gap: $gapBox;
+
+    &_link {
+        text-decoration: none;
+        @extend %font-site;
+    }
+}
+
+.content {
+    width: widthSite;
+    @include flexCenterWrap();
+    gap: $gapBox;
+
+    &_item {
+        width: ($widthSite - 3 * $gapBox) / 4;
+        height: 200px;
+        border: $borderBox;
+        box-sizing: border-box;
+    }
+}
