@@ -1,0 +1,379 @@
+// Фрагментирование
+@import 'vars';
+
+// Миксины
+@import 'mixins';
+
+// Наследование
+%flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+summary {
+    display: block;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'latobold';
+}
+
+a {
+    text-decoration: none;
+}
+
+// Математика
+.center {
+    padding-right: calc(50% - $widthSite / 2);
+    padding-left: calc(50% - $widthSite / 2);
+}
+
+.box_content {
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: $backBlock;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @extend %flex;
+    position: relative;
+
+    &_left {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    &_rigth {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+}
+
+#burger {
+    position: absolute;
+    left: -999999px;
+    visibility: hidden;
+
+    &:checked~.nav {
+        right: -$widthBurgerMenu;
+    }
+}
+
+.nav {
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0.21);
+    width: 232px;
+    padding: 32px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    transition: rigth 0.3s;
+}
+
+.top-head {
+    background: #F1E4E6;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-head_heading {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: $colorSelectSite;
+}
+
+.bredcrumbs_link {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+}
+
+.bredcrumbs_link_site {
+    font-weight: 700;
+    color: $colorSelectSite;
+}
+
+.filter-sort {
+    height: 132px;
+    padding-top: 39px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    gap: $gapGrid;
+}
+
+.filter {
+    padding-top: 13px;
+    box-sizing: border-box;
+    width: 360px;
+    position: relative;
+    z-index: 10;
+
+    // Состояние в момент открытия
+    &[open] {
+        background: #FFFFFF;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0.21);
+    }
+
+    &[open] .filter_heading {
+        color: $colorSelectSite;
+    }
+
+    &[open] path {
+        fill: $colorSelectSite;
+    }
+
+    &_content {
+        background-color: #fff;
+        padding: 0 16px 16px 16px;
+    }
+
+    &_heading {
+        color: $colorText;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    &_summary {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        padding-left: 16px;
+    }
+
+    &_item {
+        margin-top: 16px;
+    }
+
+    &_head {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+        padding: 8px 11px 11px 11px;
+        border-bottom: 1px solid #EBEBEB;
+        border-left: 5px solid $colorSelectSite;
+    }
+
+    &_item[open] .filter_head {
+        color: $colorSelectSite;
+    }
+
+    &_link_box {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        padding: 24px 16px;
+    }
+
+    &_link {
+        color: #6F6E6E;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        &:hover {
+            color: $colorSelectSite;
+        }
+    }
+}
+
+.sort {
+    padding-top: 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+
+    &_details {
+        position: relative;
+    }
+
+    &_summary {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &_heading {
+        color: #6F6E6E;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &_box {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        background-color: #FFFFFF;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0.21);
+        padding: 7px 30px 11px 9px;
+        position: absolute;
+        left: -9px;
+        top: 22px;
+    }
+
+    &_check {
+        display: flex;
+        gap: 9px;
+        align-items: center;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #6F6E6E;
+    }
+}
+
+.product-box {
+    @include centerflex();
+    gap: $gapGrid;
+}
+
+// Вложенность
+.product {
+    width: $thirdSite;
+    display: flex;
+    flex-direction: column;
+
+    &_img {
+        width: 100%;
+    }
+
+    &_content {
+        background-color: #F8F8F8;
+        padding: 24px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &_name {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: $colorText;
+    }
+
+    &_text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: #5D5D5D;
+    }
+
+    &_price {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: $colorSelectSite;
+    }
+}
+
+.box {
+    // вариант 1
+    // width: 200px;
+    // height: 200px;
+    // font-size: 40px;
+    // color: white;
+    // text-shadow: 1px 1px 1px #000;
+    // вариант 2
+    width: 400px;
+    height: 200px;
+    font-size: 40px;
+    color: white;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.content {
+    background-color: #ccc;
+    height: 1400px;
+}
+
+.content-header {
+    height: 50px;
+    background-color: #555;
+    position: sticky;
+    top: 0;
+}
+
+.parallax {
+    min-height: 500px;
+    background-image: url(images/1614840315_96-p-fon-zvezdnoe-nebo-145.jpg);
+    background-attachment: fixed;
+}
+
+.menu {
+    position: sticky;
+    top: 20%;
+    width: 20%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+
+.main {
+    margin-left: 30%;
+}
+
+// Плавность прокрутки
+html {
+    scroll-behavior: smooth;
+}
+
+// clip-path
+.item {
+    height: 400px;
+    background-color: #ccc;
+    // background-image: url(images/1614840315_96-p-fon-zvezdnoe-nebo-145.jpg);
+    background-size: cover;
+}
+
+.item1 {
+    clip-path: circle(150px at 10px 200px);
+}
+
+.item2 {
+    clip-path: ellipse(130px 140px at 10% 20%);
+}
+
+.item3 {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.item4 {
+    clip-path: polygon(50% 10%, 12% 100%, 30% 40%, 0% 25%);
+}
