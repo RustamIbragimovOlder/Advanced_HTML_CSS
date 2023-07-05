@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.box1 {
+  width: 600px;
+  height: 600px;
+  border-style: solid;
+  border-image-width: 100px;
+  border-image-source: url(../images/fon-zvezdnoe-nebo.jpg);
+  border-image-slice: 30;
+  border-image-repeat: round;
+  text-align: center;
+  display: flex;
+}
+
+.box2 {
+  border: 10px solid transparent;
+  -o-border-image: linear-gradient(#0B0E7F, #0B95DD);
+     border-image: linear-gradient(#0B0E7F, #0B95DD);
+  border-image-slice: 1;
+}
+
+.title1 {
+  margin: auto;
+  font-family: "open_sansregular";
+  font-size: 32px;
+  padding-top: 48px;
+}
+
+.text1 {
+  font-family: "open_sansregular";
+  font-size: 24px;
+}
+
+.title2 {
+  font-family: "merriweatherlight";
+  font-size: 32px;
+  padding-top: 48px;
+}
+
+.text2 {
+  font-family: "merriweatherbold";
+  font-size: 24px;
+}
+
+.example2 {
+  padding-top: 48px;
+  font-size: 40px;
+  color: white;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: blue;
+}
+
+.triangle-up {
+  margin: 10px;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red;
+}
+
+.triangle-down {
+  margin: 10px;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid green;
+}
+
+.triangle-left {
+  margin: 10px;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-right: 100px solid black;
+}
+
+.triangle-right {
+  margin: 10px;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 100px solid blue;
+}/*# sourceMappingURL=style.css.map */

@@ -583,6 +583,28 @@ body {
   align-items: center;
 }
 
+.bredcrumbs_link {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+  color: #636363;
+}
+.bredcrumbs_link:not(:last-child)::after {
+  content: "/";
+  padding-left: 8px;
+  padding-right: 8px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+}
+.bredcrumbs_link_site {
+  font-weight: 700;
+  color: #F16D7F;
+}
+
 .filter-sort {
   height: 132px;
   padding-top: 39px;
