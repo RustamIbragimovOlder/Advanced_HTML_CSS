@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Cart</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_left">
+            <a href="index.html" class="logo"><img src="images/logo.svg" alt="logo"></a>
+            <form class="search" action="#">
+                <button class="search_button" type="submit"><img src="images/search.svg" alt="search"></button>
+                <input class="search_input" type="text" placeholder="Search">
+            </form>
+        </div>
+        <div class="header_rigth">
+            <label for="burger"><img src="images/menu.svg" alt="menu"></label>
+            <input id="burger" type="checkbox">
+            <nav class="menu">
+                <h1 class="menu_title">MENU</h1>
+                <div class="menu_item">
+                    <a href="#" class="menu_item_title">MAN</a>
+                    <ul class="menu_list">
+                        <li><a class="menu_link" href="#">Accessories</a></li>
+                        <li><a class="menu_link" href="#">Bags</a></li>
+                        <li><a class="menu_link" href="#">Denim</a></li>
+                        <li><a class="menu_link" href="#">T-Shirts</a></li>
+                    </ul>
+                </div>
+                <div class="menu_item">
+                    <a href="#" class="menu_item_title">WOMAN</a>
+                    <ul class="menu_list">
+                        <li><a class="menu_link" href="#">Accessories</a></li>
+                        <li><a class="menu_link" href="#">Jackets & Coats</a></li>
+                        <li><a class="menu_link" href="#">Polos</a></li>
+                        <li><a class="menu_link" href="#">T-Shirts</a></li>
+                        <li><a class="menu_link" href="#">Shirts</a></li>
+                    </ul>
+                </div>
+                <div class="menu_item">
+                    <a href="#" class="menu_item_title">KIDS</a>
+                    <ul class="menu_list">
+                        <li><a class="menu_link" href="#">Accessories</a></li>
+                        <li><a class="menu_link" href="#">Jackets & Coats</a></li>
+                        <li><a class="menu_link" href="#">Polos</a></li>
+                        <li><a class="menu_link" href="#">T-Shirts</a></li>
+                        <li><a class="menu_link" href="#">Shirts</a></li>
+                        <li><a class="menu_link" href="#">Bags</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <a class="header_link_site" href="#"><img src="images/avatar.svg" alt="avatar"></a>
+            <a class="header_link_site" href="cart.html"><img src="images/basket.svg" alt="basket"></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="top-head center">
+            <h2 class="top-head_heading">SHOPPING CART</h2>
+        </section>
+        <section class="main_content center">
+            <section class="main_left">
+                <div class="product_sale_box">
+                    <div class="sale_product">
+                        <img class="sale_product_img" src="images/product3.svg" alt="product3">
+                        <div class="sale_product_info">
+                            <div class="sale_product_info_name">MANGO PEOPLE T-SHIRT</div>
+                            <div class="sale_product_info_price">Price: $300</div>
+                            <div class="sale_product_info_color">Color: Red</div>
+                            <div class="sale_product_info_size">Size: Xl</div>
+                            <div class="sale_product_info_quantity">
+                                <p>Quantity:</p>
+                                <input class="sale_product_info_quantity_number" min="1" type="number">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="sale_product">
+                        <img class="sale_product_img" src="images/product12.svg" alt="product12">
+                        <div class="sale_product_info">
+                            <div class="sale_product_info_name">MANGO PEOPLE T-SHIRT</div>
+                            <div class="sale_product_info_price">Price: $300</div>
+                            <div class="sale_product_info_color">Color: Red</div>
+                            <div class="sale_product_info_size">Size: Xl</div>
+                            <div class="sale_product_info_quantity">
+                                <p>Quantity:</p>
+                                <input class="sale_product_info_quantity_number" min="1" type="number">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="sale_product">
+                        <img class="sale_product_img" src="images/product11.svg" alt="product11">
+                        <div class="sale_product_info">
+                            <div class="sale_product_info_name">MANGO PEOPLE T-SHIRT</div>
+                            <div class="sale_product_info_price">Price: $300</div>
+                            <div class="sale_product_info_color">Color: Red</div>
+                            <div class="sale_product_info_size">Size: Xl</div>
+                            <div class="sale_product_info_quantity">
+                                <p>Quantity:</p>
+                                <input class="sale_product_info_quantity_number" min="1" type="number">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="button_box">
+                    <button class="button_box_clear">CLEAR SHOPPING CART</button>
+                    <button class="button_box_continue">CONTINUE SHOPPING</button>
+                </div>
+            </section>
+
+            <section class="main_right">
+                <h2 class="main_right_title">SHIPPING ADRESS</h2>
+                <input class="input country" type="text" required placeholder="Coutry">
+                <input class="input state" type="text" required placeholder="State">
+                <input class="input postcode" type="text" equired placeholder="Postcode / Zip">
+                <button class="get">GET A QUOTE</button>
+                <div class="proceed">
+                    <div class="sale">
+                        <p class="sub_total">SUB TOTAL $900</p>
+                        <p class="grand_total">GRAND TOTAL $900</p>
+                        <div class="line3"></div>
+                        <button class="checkout">PROCEED TO CHECKOUT</button>
+                    </div>
+                </div>
+
+
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="subscribe">
+            <img class="subscribe_img" src="images/subscribe.svg" alt="subscribe">
+            <div class="subscribe_box">
+                <div class="subscribe_left">
+                    <div class="subscribe_intersect">
+                        <img src="images/intersect.png" alt="intersect">
+                    </div>
+                    <p class="subscribe_info">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
+                        purus
+                        condimentum“</p>
+                </div>
+                <div class="subscribe_right">
+                    <h4 class="subscribe_title">SUBSCRIBE</h4>
+                    <p class="subscribe_text">FOR OUR NEWLETTER AND PROMOTION</p>
+                    <form class="subscribe_form" action="#">
+                        <input class="subscribe_form_email" type="email" required placeholder="Enter Your Email">
+                        <button class="subscribe_form_button" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="copyright_text">© 2022 Brand All Rights Reserved.</p>
+            <div class="social_icon">
+                <div class="social_icon_item">
+                    <a href="#"><img src="images/facebook.svg" alt="facebook"></a>
+                </div>
+                <div class="social_icon_item">
+                    <a href="#"><img src="images/instagram.svg" alt="instagram"></a>
+                </div>
+                <div class="social_icon_item">
+                    <a href="#"><img src="images/pinterest.svg" alt="pinterest"></a>
+                </div>
+                <div class="social_icon_item">
+                    <a href="#"><img src="images/twitter.svg" alt="twitter"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
