@@ -4,6 +4,6 @@ $widthSite: 1140px;
 $backBlock: #222222;
 $colorText: #000;
 $gapGrid: 30px;
-$thirdSite: (
-    $widthSite - $gapGrid * 2) / 3;
+$thirdSite: calc(($widthSite - 2 * $gapGrid) / 3);
+$fourthdSite: calc(($widthSite - 3 * $gapGrid) / 4);
 $widthBurgerMenu: 232px;
