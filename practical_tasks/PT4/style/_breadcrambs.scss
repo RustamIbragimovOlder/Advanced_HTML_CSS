@@ -1,0 +1,45 @@
+.breadcrambs {
+    background-color: #F8F3F4;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__title {
+        color: $colorSelectSite;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__ul {
+        list-style-type: none;
+        display: flex;
+    }
+
+    &__li:not(:last-child)::after {
+        content: '/';
+        padding-left: 8px;
+        padding-right: 8px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 14px;
+        color: #636363;
+    }
+
+    &__link {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 14px;
+        color: #636363;
+    }
+
+    &__li:last-child .breadcrambs__link {
+        font-weight: 700;
+        color: $colorSelectSite;
+    }
+}
