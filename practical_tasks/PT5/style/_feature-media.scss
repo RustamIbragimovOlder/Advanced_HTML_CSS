@@ -1,0 +1,16 @@
+@media (max-width: 768px) {
+    // .center {
+    //     padding-left: calc(50% - 384px);
+    //     padding-right: calc(50% - 384px);
+    // }
+
+    .feature {
+        padding: 48px 0 64px 0;
+        flex-direction: column;
+        align-items: center;
+
+        &__item {
+            gap: 16px;
+        }
+    }
+}

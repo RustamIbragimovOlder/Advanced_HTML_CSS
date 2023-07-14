@@ -1,0 +1,55 @@
+@media (max-width: 1024px) {
+    .content-reg {
+        gap: 22px;
+        margin-right: 16px;
+        margin-left: 16px;
+
+        &__left {}
+
+        &__right {}
+    }
+
+    .reg {
+        &__title {
+            margin-top: 40px;
+        }
+    }
+
+    .loylty {
+        // width: 354px;
+        font-size: 16px;
+
+        &__heading {
+            margin-top: 40px;
+        }
+
+        &__text {
+            margin-top: 22px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .reg {
+        // margin-left: 16px;
+
+        &__title {
+            margin-top: 40px;
+        }
+    }
+
+    .loylty {
+        // margin-left: 22px;
+        // margin-right: 16px;
+        font-size: 16px;
+
+        &__heading {
+            margin-top: 40px;
+        }
+
+        &__text {
+            margin-top: 22px;
+        }
+    }
+}

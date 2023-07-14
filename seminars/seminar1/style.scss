@@ -8,7 +8,7 @@
 }
 
 .container {
-    width: ($widthSite - 2 * $gapBox);
+    width: calc(($widthSite - 2 * $gapBox));
     border: $borderBox;
     text-align: center;
 }
@@ -33,12 +33,12 @@
 }
 
 .content {
-    width: widthSite;
+    width: $widthSite;
     @include flexCenterWrap();
     gap: $gapBox;
 
     &_item {
-        width: ($widthSite - 3 * $gapBox) / 4;
+        width: calc(($widthSite - 3 * $gapBox) / 4);
         height: 200px;
         border: $borderBox;
         box-sizing: border-box;

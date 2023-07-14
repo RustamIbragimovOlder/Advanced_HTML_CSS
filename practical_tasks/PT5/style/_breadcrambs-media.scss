@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+    .breadcrambs {
+        &__title {
+            margin-left: 16px;
+        }
+
+        &__nav {
+            margin-right: 16px;
+        }
+    }
+}

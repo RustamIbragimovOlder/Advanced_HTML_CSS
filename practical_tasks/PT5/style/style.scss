@@ -1,0 +1,44 @@
+@import 'vars';
+@import 'index';
+@import 'index-media';
+@import 'product';
+@import 'product-media';
+@import 'catalog';
+@import 'catalog-media';
+@import 'cart';
+@import 'cart-media';
+@import 'registration';
+@import 'registration-media';
+@import 'header';
+@import 'header-media';
+@import 'product-box';
+@import 'product-box-media';
+@import 'breadcrambs';
+@import 'breadcrambs-media';
+@import 'footer';
+@import 'footer-media';
+@import 'feature';
+@import 'feature-media';
+
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+
+    .center {
+        padding-right: calc(50% - $widthSite / 2);
+        padding-left: calc(50% - $widthSite / 2);
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+
+        .center {
+            padding-right: calc(50% - 384px);
+            padding-left: calc(50% - 384px);
+        }
+    }
+}
