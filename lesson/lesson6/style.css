@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes duck-fly-1 {
+  0% {
+    left: -160px;
+    top: 90vh;
+  }
+  25% {
+    left: 15vw;
+    top: 58vh;
+  }
+  50% {
+    left: 1vw;
+    top: 40vh;
+  }
+  75% {
+    left: 43vw;
+    top: 6vh;
+  }
+  100% {
+    left: 100vw;
+    top: 80vh;
+  }
+}
+@keyframes duck-fly-2 {
+  0% {
+    left: -160px;
+    top: 20vh;
+  }
+  25% {
+    left: 2vw;
+    top: 75vh;
+  }
+  50% {
+    left: 24vw;
+    top: 59vh;
+  }
+  75% {
+    left: 36vw;
+    top: 30vh;
+  }
+  100% {
+    left: 100vw;
+    top: 55vh;
+  }
+}
+@keyframes duck-fly-3 {
+  0% {
+    left: -160px;
+    top: 30vh;
+  }
+  25% {
+    left: 25vw;
+    top: 74vh;
+  }
+  50% {
+    left: 16vw;
+    top: 18vh;
+  }
+  75% {
+    left: 45vw;
+    top: 62vh;
+  }
+  100% {
+    left: 100vw;
+    top: 16vh;
+  }
+}
+@keyframes duck-fly-4 {
+  0% {
+    left: -160px;
+    top: 60vh;
+  }
+  25% {
+    left: 13vw;
+    top: 1vh;
+  }
+  50% {
+    left: 22vw;
+    top: 67vh;
+  }
+  75% {
+    left: 64vw;
+    top: 76vh;
+  }
+  100% {
+    left: 100vw;
+    top: 76vh;
+  }
+}
+@keyframes duck-fly-5 {
+  0% {
+    left: -160px;
+    top: 25vh;
+  }
+  25% {
+    left: 25vw;
+    top: 30vh;
+  }
+  50% {
+    left: 39vw;
+    top: 46vh;
+  }
+  75% {
+    left: 72vw;
+    top: 74vh;
+  }
+  100% {
+    left: 100vw;
+    top: 35vh;
+  }
+}
+.body {
+  counter-reset: duck-count;
+  height: 100vh;
+  background-image: url(https://i.ytimg.com/vi/i9R8MqilMW8/maxresdefault.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.duck-check {
+  position: absolute;
+  visibility: hidden;
+  left: -999999px;
+}
+.duck-check:checked {
+  counter-increment: duck-count;
+}
+.duck-check:checked ~ label {
+  display: none;
+}
+
+.counte-info {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+.counte-info::after {
+  content: counter(duck-count);
+}
+
+.duck {
+  position: absolute;
+}
+.duck__img {
+  width: 160px;
+}
+.duck_1 {
+  animation: duck-fly-1 10s ease-in 3s both;
+}
+.duck_2 {
+  animation: duck-fly-2 10s ease-in 6s both;
+}
+.duck_3 {
+  animation: duck-fly-3 10s ease-in 9s both;
+}
+.duck_4 {
+  animation: duck-fly-4 10s ease-in 12s both;
+}
+.duck_5 {
+  animation: duck-fly-5 10s ease-in 15s both;
+}/*# sourceMappingURL=style.css.map */
