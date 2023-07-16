@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+$countLamp: 5;
+
+@for $i from 1 through $countLamp {
+    @keyframes lamp-on-#{$i} {
+        0% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+}
+
+.body {
+    counter-reset: lamp-count;
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url(nightmap.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.counte-info {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    color: white;
+    z-index: 10;
+
+    &::after {
+        content: counter(lamp-count);
+    }
+}
+
+.lamp {
+
+    @for $i from 1 through $countLamp {
+        &_#{$i} {
+            top: random(90)+vh;
+            left: random(90)+vw;
+            animation: lamp-on-#{$i} 3s #{3*$i}s;
+        }
+    }
+
+    position: absolute;
+    opacity: 0;
+}
+
+.lamp-check {
+    position: absolute;
+    visibility: hidden;
+    left: -999999px;
+
+    &:checked {
+        counter-increment: lamp-count;
+
+        &~label {
+            display: none;
+        }
+    }
+}

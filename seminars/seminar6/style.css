@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes lamp-on-1 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes lamp-on-2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes lamp-on-3 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes lamp-on-4 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes lamp-on-5 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.body {
+  counter-reset: lamp-count;
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url(nightmap.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.counte-info {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  color: white;
+  z-index: 10;
+}
+.counte-info::after {
+  content: counter(lamp-count);
+}
+
+.lamp {
+  position: absolute;
+  opacity: 0;
+}
+.lamp_1 {
+  top: 48vh;
+  left: 10vw;
+  animation: lamp-on-1 3s 3s;
+}
+.lamp_2 {
+  top: 47vh;
+  left: 41vw;
+  animation: lamp-on-2 3s 6s;
+}
+.lamp_3 {
+  top: 2vh;
+  left: 57vw;
+  animation: lamp-on-3 3s 9s;
+}
+.lamp_4 {
+  top: 29vh;
+  left: 62vw;
+  animation: lamp-on-4 3s 12s;
+}
+.lamp_5 {
+  top: 70vh;
+  left: 78vw;
+  animation: lamp-on-5 3s 15s;
+}
+
+.lamp-check {
+  position: absolute;
+  visibility: hidden;
+  left: -999999px;
+}
+.lamp-check:checked {
+  counter-increment: lamp-count;
+}
+.lamp-check:checked ~ label {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
