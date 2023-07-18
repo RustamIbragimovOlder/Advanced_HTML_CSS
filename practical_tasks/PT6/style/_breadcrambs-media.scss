@@ -1,0 +1,45 @@
+@media (max-width: 1024px) {
+    .breadcrambs {
+        &__title {
+            margin-left: 32px;
+        }
+
+        &__nav {
+            margin-right: 32px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .breadcrambs {
+        &__title {
+            margin-left: 16px;
+        }
+
+        &__nav {
+            margin-right: 16px;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .breadcrambs {
+        height: 148px;
+        padding-top: 24px;
+        padding-bottom: 46px;
+        gap: 32px;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 375px) {
+    .breadcrambs {
+        height: 148px;
+        padding-top: 24px;
+        padding-bottom: 46px;
+        gap: 32px;
+        justify-content: center;
+        flex-direction: column;
+    }
+}

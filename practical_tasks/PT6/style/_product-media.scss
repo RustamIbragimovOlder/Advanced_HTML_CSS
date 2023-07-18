@@ -1,0 +1,124 @@
+@media (max-width: 1024px) {
+    .information {
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .information {
+        margin: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .slider {
+        width: 96vw;
+        height: 514px;
+        padding-top: 0;
+        position: relative;
+
+        &__arrow {
+            &_left {
+                margin-left: 0;
+                position: absolute;
+                left: 0;
+                z-index: 10;
+            }
+
+            &_right {
+                right: 0;
+                position: absolute;
+                margin-right: 0;
+                z-index: 10;
+            }
+        }
+
+        &__img {
+            width: 425px;
+            height: 514px;
+            z-index: 1;
+        }
+    }
+
+    .information {
+        width: 100vw;
+
+        &__item {
+            width: 100vw;
+        }
+
+        &__subtitle {
+            padding-bottom: 0;
+        }
+
+        &__text {
+            margin-top: 32px;
+            width: 320px;
+        }
+
+        &__line2 {
+            width: 175px;
+            height: 3px;
+            color: #EAEAEA;
+        }
+    }
+
+    .sort {
+        margin-top: 0;
+        gap: 12px;
+
+        &__heading {
+            font-size: 10px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .slider {
+        width: 96vw;
+        height: 514px;
+        padding-top: 0;
+        position: relative;
+
+        &__arrow {
+            &_left {
+                position: absolute;
+                left: 0;
+                z-index: 10;
+            }
+
+            &_right {
+                right: 0;
+                position: absolute;
+                margin-right: 0;
+                z-index: 10;
+            }
+        }
+
+        &__img {
+            width: 425px;
+            height: 514px;
+            z-index: 1;
+        }
+    }
+
+    .information {
+        &__subtitle {
+            padding-bottom: 0;
+        }
+
+        &__text {
+            margin-top: 32px;
+            width: 320px;
+        }
+    }
+
+    .sort {
+        margin-top: 0;
+        gap: 12px;
+
+        &__heading {
+            font-size: 10px;
+        }
+    }
+}

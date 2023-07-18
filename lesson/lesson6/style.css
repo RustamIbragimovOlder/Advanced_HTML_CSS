@@ -6,111 +6,111 @@
 @keyframes duck-fly-1 {
   0% {
     left: -160px;
-    top: 13vh;
+    top: 89vh;
   }
   25% {
-    left: 10vw;
-    top: 61vh;
+    left: 2vw;
+    top: 83vh;
   }
   50% {
-    left: 32vw;
-    top: 20vh;
+    left: 9vw;
+    top: 7vh;
   }
   75% {
-    left: 35vw;
-    top: 65vh;
+    left: 41vw;
+    top: 24vh;
   }
   100% {
     left: 100vw;
-    top: 17vh;
+    top: 56vh;
   }
 }
 @keyframes duck-fly-2 {
   0% {
     left: -160px;
-    top: 90vh;
+    top: 42vh;
   }
   25% {
-    left: 20vw;
-    top: 19vh;
+    left: 21vw;
+    top: 13vh;
   }
   50% {
-    left: 23vw;
-    top: 51vh;
+    left: 7vw;
+    top: 28vh;
   }
   75% {
-    left: 41vw;
-    top: 43vh;
+    left: 7vw;
+    top: 89vh;
   }
   100% {
     left: 100vw;
-    top: 83vh;
+    top: 23vh;
   }
 }
 @keyframes duck-fly-3 {
   0% {
     left: -160px;
-    top: 48vh;
+    top: 60vh;
   }
   25% {
-    left: 25vw;
-    top: 27vh;
+    left: 7vw;
+    top: 35vh;
   }
   50% {
-    left: 18vw;
-    top: 10vh;
+    left: 24vw;
+    top: 60vh;
   }
   75% {
-    left: 71vw;
-    top: 86vh;
+    left: 33vw;
+    top: 26vh;
   }
   100% {
     left: 100vw;
-    top: 27vh;
+    top: 30vh;
   }
 }
 @keyframes duck-fly-4 {
   0% {
     left: -160px;
-    top: 7vh;
+    top: 6vh;
   }
   25% {
-    left: 11vw;
-    top: 1vh;
+    left: 6vw;
+    top: 85vh;
   }
   50% {
-    left: 46vw;
-    top: 46vh;
+    left: 4vw;
+    top: 63vh;
   }
   75% {
-    left: 69vw;
-    top: 37vh;
+    left: 22vw;
+    top: 42vh;
   }
   100% {
     left: 100vw;
-    top: 90vh;
+    top: 36vh;
   }
 }
 @keyframes duck-fly-5 {
   0% {
     left: -160px;
-    top: 67vh;
+    top: 64vh;
   }
   25% {
-    left: 7vw;
-    top: 26vh;
+    left: 21vw;
+    top: 90vh;
   }
   50% {
-    left: 11vw;
-    top: 26vh;
+    left: 44vw;
+    top: 1vh;
   }
   75% {
-    left: 20vw;
-    top: 19vh;
+    left: 55vw;
+    top: 54vh;
   }
   100% {
     left: 100vw;
-    top: 64vh;
+    top: 37vh;
   }
 }
 .body {

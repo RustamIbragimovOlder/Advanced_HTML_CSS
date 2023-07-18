@@ -86,28 +86,28 @@
   opacity: 0;
 }
 .lamp_1 {
-  top: 48vh;
-  left: 10vw;
+  top: 73vh;
+  left: 23vw;
   animation: lamp-on-1 3s 3s;
 }
 .lamp_2 {
-  top: 47vh;
-  left: 41vw;
+  top: 44vh;
+  left: 51vw;
   animation: lamp-on-2 3s 6s;
 }
 .lamp_3 {
-  top: 2vh;
-  left: 57vw;
+  top: 31vh;
+  left: 81vw;
   animation: lamp-on-3 3s 9s;
 }
 .lamp_4 {
-  top: 29vh;
-  left: 62vw;
+  top: 76vh;
+  left: 20vw;
   animation: lamp-on-4 3s 12s;
 }
 .lamp_5 {
-  top: 70vh;
-  left: 78vw;
+  top: 8vh;
+  left: 61vw;
   animation: lamp-on-5 3s 15s;
 }
 
